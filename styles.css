@@ -1,0 +1,61 @@
+body {
+  background-image: url("back.png");
+}
+
+hr {
+  border-top-width: 7px;
+  border-top-color: #FC4F4F;
+  border-style: none;
+  border-top-style: dotted;
+  width: 7%
+}
+
+a {
+  color: #060930;
+  font: italic 1.2em "Fira Sans", serif;
+}
+
+h1 {
+  color: #6A097D;
+  font-size: 300%
+}
+
+h2 {
+  text-decoration: underline;
+  text-decoration-color: #647E68;
+  color: #187498;
+}
+
+h3 {
+  font: italic 1.2em "Fira Sans", serif;
+  color: #000000;
+  position: relative;
+  top: -20px;
+  left: 1050px;
+}
+
+p1 {
+  font-size: 120%
+}
+
+ul {
+  color: #5C2E7E;
+  font-size: 120%
+}
+
+ol {
+  font-size: 130%
+}
+
+p2 {
+  color: #890F0D;
+  font-size: 150%
+}
+
+strong {
+  color: #790252;
+}
+
+strong1 {
+  color: #674747;
+}
