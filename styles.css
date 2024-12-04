@@ -1,13 +1,16 @@
 body {
   background-image: url("back.png");
+  background-size: cover; /* Ensures the background adjusts to screen size */
+  background-repeat: no-repeat;
+  margin: 0;
 }
 
 hr {
   border-top-width: 7px;
   border-top-color: #FC4F4F;
-  border-style: none;
   border-top-style: dotted;
-  width: 7%
+  width: 70%; /* Increased width for better visibility */
+  margin: auto; /* Centers the HR line */
 }
 
 a {
@@ -17,13 +20,15 @@ a {
 
 h1 {
   color: #6A097D;
-  font-size: 300%
+  font-size: 2.5rem; /* Scalable font size */
+  text-align: center; /* Centers heading */
 }
 
 h2 {
   text-decoration: underline;
   text-decoration-color: #647E68;
   color: #187498;
+  text-align: center; /* Centers subheading */
 }
 
 h3 {
@@ -31,25 +36,22 @@ h3 {
   color: #000000;
   position: relative;
   top: -20px;
-  left: 1050px;
+  left: 10%; /* Adjusts to a percentage for responsiveness */
 }
 
-p1 {
-  font-size: 120%
+p {
+  font-size: 1.2em; /* Standardized tag */
 }
 
 ul {
   color: #5C2E7E;
-  font-size: 120%
+  font-size: 1.2em;
+  padding-left: 15px; /* Consistent spacing */
 }
 
 ol {
-  font-size: 130%
-}
-
-p2 {
-  color: #890F0D;
-  font-size: 150%
+  font-size: 1.3em;
+  padding-left: 15px;
 }
 
 strong {
@@ -59,3 +61,26 @@ strong {
 strong1 {
   color: #674747;
 }
+
+/* Mobile-Friendly Styles */
+@media (max-width: 768px) {
+  body {
+    background-size: contain; /* Adjust background for small screens */
+  }
+
+  h1, h2, h3 {
+    font-size: 1.8rem; /* Smaller font sizes for headers */
+    text-align: center; /* Center text on smaller screens */
+    left: 0; /* Removes large positioning offsets */
+    top: 0;
+  }
+
+  hr {
+    width: 90%; /* Expands the width for small screens */
+  }
+
+  ul, ol {
+    font-size: 1em; /* Slightly smaller text */
+  }
+}
+
